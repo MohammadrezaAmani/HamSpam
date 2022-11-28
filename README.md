@@ -1,4 +1,4 @@
-## Persian Spam email detector
+# Persian Spam email detector
 
 This is a Persian spam email detector based on some machine learning algorithms. The project is written in Python 3.11 and uses Scikit-learn, Numpy, Pandas and Hazm libraries.
 
@@ -35,3 +35,16 @@ with accuracy of 94.8%.
 |SGDClassifier| 0.948|
 |MultinomialNB| 0.94|
 |SVC| 0.936|
+
+## How to improve accuracy
+
+increase the number of features. this operation nees more time to compute but get accuracy about 98%.
+
+replace
+```python3
+word_features = list(all_words.keys())[:1500]
+```
+with:
+```python3
+word_features = list(all_words.keys())
+```
